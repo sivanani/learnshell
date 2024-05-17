@@ -16,4 +16,4 @@ systemctl start catalogue
 
 cp /home/centos/learnshell/mongo.repo /etc/yum.repos.d/mongo.repo
 dnf install mongodb-org-shell -y
-mongo --host mongodb-mongodb.devopsr72.online </app/schema/catalogue.js
+mongo --host mongodb.devopsr72.online </app/schema/catalogue.js
