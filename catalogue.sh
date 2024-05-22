@@ -15,13 +15,13 @@ unzip /tmp/catalogue.zip
 echo -e "\e[36m >>>>>>> Install catalogue content <<<<<<<\e[0m"
 cd /app
 npm install
-cp catalogue.service /etc/systemd/system/catalogue.service
+cp /home/centos/learnshell/catalogue.service /etc/systemd/system/catalogue.service
 echo -e "\e[36m >>>>>>> Restart catalogue server <<<<<<<\e[0m"
 systemctl daemon-reload
 systemctl enable catalogue 
 systemctl restart catalogue
 echo -e "\e[36m >>>>>>> copy mongorepo file <<<<<<<\e[0m"
-cp mongo.repo /etc/yum.repos.d/mongo.repo
+cp /home/centos/learnshell/mongo.repo /etc/yum.repos.d/mongo.repo
 dnf install mongodb-org-shell -y
 echo -e "\e[36m >>>>>>> mongodb connection <<<<<<<\e[0m"
 mongo --host mongodb.devopsi72.online </app/schema/catalogue.js
