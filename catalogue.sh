@@ -24,4 +24,4 @@ echo -e "\e[36m >>>>>>> copy mongorepo file <<<<<<<\e[0m"
 cp /home/centos/learnshell/mongo.repo /etc/yum.repos.d/mongo.repo
 dnf install mongodb-org-shell -y
 echo -e "\e[36m >>>>>>> mongodb connection <<<<<<<\e[0m"
-mongo --host mongodb.devopsr72.online </app/schema/catalogue.js
+mongo --host mongodb.devopsi72.online </app/schema/catalogue.js
