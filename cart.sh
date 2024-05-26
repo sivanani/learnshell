@@ -1,3 +1,5 @@
+script_path=${dirname $0}
+source ${script_path}/common.sh
 dnf module disable nodejs -y
 dnf module enable nodejs:18 -y
 dnf install nodejs -y
@@ -8,7 +10,7 @@ cd /app
 unzip /tmp/cart.zip
 cd /app 
 npm install
-cp cart.service /etc/systemd/system/cart.service
+cp ${script_path}/cart.service /etc/systemd/system/cart.service
 systemctl daemon-reload
 systemctl enable cart 
 systemctl start cart
