@@ -1,4 +1,3 @@
-script_path=${dirname $0}
 source ${script_path}/common.sh
 source common.sh
 dnf module disable nodejs -y
